@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Popup Blocker for Specific Sites",
+    "version": "1.0",
+    "description": "Blocks pop-up tabs on specific sites.",
+    "permissions": ["tabs", "webNavigation", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "no-sign.png",
+        "48": "no-sign.png",
+        "128": "no-sign.png"
+      }
+    }
+  }

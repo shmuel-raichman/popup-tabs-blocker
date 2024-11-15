@@ -1,0 +1,39 @@
+<!-- B"H -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Blocker for Specific Sites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .small-print {
+            font-size: 10px;
+            color: gray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Popup Blocker</h1>
+    <p>This extension blocks pop-up tabs from specific sites.</p>
+    <p>Currently blocked sites:</p>
+    <ul id="blocked-sites">
+        <!-- Blocked sites will be listed here -->
+    </ul>
+    <input type="text" id="new-site" placeholder="Enter site to block">
+    <button id="add-site">Add Site</button>
+    <p class="small-print">Extension Path: C:\some\path</p>
+    <script src="popup.js"></script>
+</body>
+</html>
